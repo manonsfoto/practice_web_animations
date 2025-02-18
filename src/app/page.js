@@ -1,50 +1,35 @@
 "use client";
 import styles from "./page.module.css";
-import { useState } from "react";
-import Project from "../components/project";
-import Modal from "../components/modal";
+import Link from "next/link";
 
-const projects = [
+const animationProjects = [
   {
-    title: "C2 Montreal",
-    src: "c2montreal.png",
+    title: "Gallery Mouse Hover",
+    description: "Interactive gallery with mouse hover animations",
+    path: "/gallery-hover",
     color: "#000000",
   },
   {
-    title: "Office Studio",
-    src: "officestudio.png",
-    color: "#8C8C8C",
+    title: "Cartoon Cursor Trailing",
+    description: "Animated cursor following the mouse",
+    path: "/cartoon-cursor-trailing",
+    color: "#000000",
   },
-  {
-    title: "Locomotive",
-    src: "locomotive.png",
-    color: "#EFE8D3",
-  },
-  {
-    title: "Silencio",
-    src: "silencio.png",
-    color: "#706D63",
-  },
+  // Add more animation projects here as you create them
 ];
 
 export default function Home() {
-  const [modal, setModal] = useState({ active: false, index: 0 });
-
   return (
     <main className={styles.main}>
-      <div className={styles.body}>
-        {projects.map((project, index) => {
-          return (
-            <Project
-              index={index}
-              title={project.title}
-              setModal={setModal}
-              key={index}
-            />
-          );
-        })}
+      <h1 className={styles.title}>Web Animation Projects</h1>
+      <div className={styles.grid}>
+        {animationProjects.map((project, index) => (
+          <Link href={project.path} key={index} className={styles.card}>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+          </Link>
+        ))}
       </div>
-      <Modal modal={modal} projects={projects} key={modal.active} />
     </main>
   );
 }

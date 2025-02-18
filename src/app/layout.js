@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Gallery Animation",
-  description: "Practice for Gallery Animation",
+  title: "Web Animation Projects",
+  description: "Practice for Web Animation Projects",
 };
 
 export default function RootLayout({ children }) {

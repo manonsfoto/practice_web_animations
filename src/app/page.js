@@ -15,13 +15,19 @@ const animationProjects = [
     path: "/cartoon-cursor-trailing",
     color: "#000000",
   },
-  // Add more animation projects here as you create them
+  {
+    title: "Gallery Colored Card",
+    description: "Interactive gallery with colored cards",
+    path: "/gallery-colored-card",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Web Animation Projects</h1>
+
       <div className={styles.grid}>
         {animationProjects.map((project, index) => (
           <Link href={project.path} key={index} className={styles.card}>

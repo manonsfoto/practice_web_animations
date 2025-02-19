@@ -19,7 +19,7 @@
 
   mix-blend-mode: difference;
 
-  color: white;
+  color: rgb(150, 253, 65);
 }
 
 .container .grid {

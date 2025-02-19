@@ -45,6 +45,12 @@ const animationProjects = [
     path: "/pixel-cursor-trailing",
     color: "#000000",
   },
+  {
+    title: "Mouse Image Gallery",
+    description: "Interactive gallery with mouse hover animations",
+    path: "/mouse-image-gallery",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {

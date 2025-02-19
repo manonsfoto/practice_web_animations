@@ -21,6 +21,18 @@ const animationProjects = [
     path: "/gallery-colored-card",
     color: "#000000",
   },
+  {
+    title: "Bezier Curve",
+    description: "Interactive bezier curve animation",
+    path: "/bezier-curve",
+    color: "#000000",
+  },
+  {
+    title: "3D Perspective Text",
+    description: "3D perspective text animation",
+    path: "/3d-perspective-text",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {

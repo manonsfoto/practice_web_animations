@@ -33,6 +33,18 @@ const animationProjects = [
     path: "/3d-perspective-text",
     color: "#000000",
   },
+  {
+    title: "Text Mask Animation",
+    description: "Animated text with mask",
+    path: "/text-mask-animation",
+    color: "#000000",
+  },
+  {
+    title: "Pixel Cursor Trailing",
+    description: "Animated cursor following the mouse",
+    path: "/pixel-cursor-trailing",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {

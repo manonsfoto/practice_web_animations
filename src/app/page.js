@@ -51,6 +51,12 @@ const animationProjects = [
     path: "/mouse-image-gallery",
     color: "#000000",
   },
+  {
+    title: "Image Slide Project Gallery",
+    description: "Interactive gallery with mouse hover animations",
+    path: "/image-slide-project-gallery",
+    color: "#000000",
+  }
 ];
 
 export default function Home() {

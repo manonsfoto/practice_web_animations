@@ -56,7 +56,13 @@ const animationProjects = [
     description: "Interactive gallery with mouse hover animations",
     path: "/image-slide-project-gallery",
     color: "#000000",
-  }
+  },
+  {
+    title: "Infinite Text Move on Scroll",
+    description: "Animated text with mask",
+    path: "/infinite-text-move-on-scroll",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {

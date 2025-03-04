@@ -36,7 +36,7 @@ export default function Home() {
       <div className={styles.gallery}>
         <p>Featured Work</p>
         {projects.map((project) => {
-          return <SlideProject project={project} />;
+          return <SlideProject project={project} key={project.src} />;
         })}
       </div>
     </main>

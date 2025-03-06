@@ -63,6 +63,12 @@ const animationProjects = [
     path: "/infinite-text-move-on-scroll",
     color: "#000000",
   },
+  {
+    title: "Navigation Menu",
+    description: "Animated navigation menu",
+    path: "/navigation-menu",
+    color: "#000000",
+  },
 ];
 
 export default function Home() {
